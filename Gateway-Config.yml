@@ -1,0 +1,33 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: msvc-api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: catalog
+          uri: http://localhost:8010
+          predicates:
+            - Path=/api/catalog/**
+
+        - id: notifications
+          uri: http://localhost:8020
+          predicates:
+            - Path=/api/notifications/**
+        - id: orders
+          uri: http://localhost:8030
+          predicates:
+            - Path=/api/orders/**
+        - id: payments
+          uri: http://localhost:8040
+          predicates:
+            - Path=/api/payments/**
+        - id: shopping-cart
+          uri: http://localhost:8050
+          predicates:
+            - Path=/api/shopping-cart/**
+        - id: users
+          uri: http://localhost:8060
+          predicates:
+            - Path=/api/users/**
