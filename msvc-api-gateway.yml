@@ -27,7 +27,7 @@ spring:
           uri: http://localhost:8050
           predicates:
             - Path=/api/shopping-cart/**
-        - id: users
+        - id: auth
           uri: http://localhost:8060
           predicates:
-            - Path=/api/users/**
+            - Path=/api/auth/**
