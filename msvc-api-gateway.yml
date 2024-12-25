@@ -34,4 +34,4 @@ spring:
         - id: register
           uri: http://localhost:8060
           predicates:
-            -Path=/api/auth/register
+            - Path=/api/auth/register
