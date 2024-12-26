@@ -35,3 +35,7 @@ spring:
           uri: http://localhost:8060
           predicates:
             - Path=/api/auth/register
+        - id: validate
+          uri: http://localhost:8060
+          predicates:
+            - Path=/api/auth/validate
