@@ -3,6 +3,8 @@ server:
 spring:
   application:
     name: msvc-api-gateway
+  kafka:
+    bootstrapServers: localhost:9092
   cloud:
     gateway:
       routes:
