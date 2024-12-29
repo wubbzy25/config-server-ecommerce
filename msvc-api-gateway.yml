@@ -5,6 +5,10 @@ spring:
     name: msvc-api-gateway
   kafka:
     bootstrapServers: localhost:9092
+  logging:
+  level:
+    org.springframework.cloud.gateway: TRACE
+    reactor.netty.http.client: TRACE
   cloud:
     gateway:
       routes:
