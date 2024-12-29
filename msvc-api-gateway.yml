@@ -15,7 +15,7 @@ spring:
         - id: catalog
           uri: lb://msvc-catalog
           predicates:
-            - Path=/api/catalog/test
+            - Path=/api/catalog/**
         - id: notifications
           uri: lb://msvc-notifications
           predicates:
@@ -32,11 +32,7 @@ spring:
           uri: lb://msvc-shopping-cart
           predicates:
             - Path=/api/shopping-cart/**
-        - id: login
+        - id: auth
           uri: lb://msvc-auth
           predicates:
-            - Path=/api/auth/login
-        - id: register
-          uri: lb://msvc-auth
-          predicates:
-            - Path=/api/auth/register
+            - Path=/api/auth/**
