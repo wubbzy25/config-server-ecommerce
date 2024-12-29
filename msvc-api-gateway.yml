@@ -19,7 +19,7 @@ spring:
           predicates:
             - Path=/api/catalog/**
           filters:
-        - RewritePath=/api/v1/first/(?.*), /$\{remains}
+        - RewritePath=/api/catalog/(?.*), /$\{remains}
         - AddRequestHeader=X-first-Header, catalog-header
         - id: notifications
           uri: lb://msvc-notifications
