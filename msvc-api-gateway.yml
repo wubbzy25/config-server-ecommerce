@@ -11,9 +11,7 @@ spring:
         - id: catalog
           uri: http://localhost:8010
           predicates:
-            - Path=/api/catalog/**
-          filter:
-            - name: JwtValidationGlobalFilter
+            - Path=/api/catalog/test
         - id: notifications
           uri: http://localhost:8020
           predicates:
