@@ -13,7 +13,7 @@ spring:
     gateway:
       routes:
         - id: catalog
-          uri: lb://msvc-auth
+          uri: lb://msvc-catalog
           predicates:
             - Path=/api/catalog/test
         - id: notifications
