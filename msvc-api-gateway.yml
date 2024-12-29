@@ -19,8 +19,8 @@ spring:
           predicates:
             - Path=/api/catalog/**
           filters:
-        - RewritePath=/api/catalog/(?.*), /$\{remains}
-        - AddRequestHeader=X-first-Header, catalog-header
+           - RewritePath=/api/catalog/(?<segment>.*), /$\{segment}
+           - AddRequestHeader=X-first-Header, catalog-header
         - id: notifications
           uri: lb://msvc-notifications
           predicates:
