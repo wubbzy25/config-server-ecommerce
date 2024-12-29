@@ -8,9 +8,9 @@ spring:
   kafka:
     bootstrapServers: localhost:9092
   logging:
-  level:
-    org.springframework.cloud.gateway: TRACE
-    reactor.netty.http.client: TRACE
+    level:
+      org.springframework.cloud.gateway: TRACE
+      reactor.netty.http.client: TRACE
   cloud:
     gateway:
       routes:
@@ -38,3 +38,9 @@ spring:
           uri: lb://msvc-auth
           predicates:
             - Path=/api/auth/**
+
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: 'gateway'
