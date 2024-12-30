@@ -19,24 +19,34 @@ spring:
           predicates:
             - Path=/api/v1/catalog/**
           filters:
-            - RewritePath=/api/v1/catalog/(?<segment>.*), /catalog/$\\{segment}
+            - RewritePath=/api/v1/catalog/(?<segment>.*), /catalog/\${segment}
         - id: notifications
           uri: lb://msvc-notifications
           predicates:
             - Path=/api/v1/notifications/**
+          filters:
+            - PrefixPath=/api/v1
         - id: orders
           uri: lb://msvc-orders
           predicates:
             - Path=/api/v1/orders/**
+          filters:
+            - PrefixPath=/api/v1
         - id: payments
           uri: lb://msvc-payments
           predicates:
             - Path=/api/v1/payments/**
+          filters:
+            - PrefixPath=/api/v1
         - id: shopping-cart
           uri: lb://msvc-shopping-cart
           predicates:
             - Path=/api/v1/shopping-cart/**
+          filters:
+            - PrefixPath=/api/v1
         - id: auth
           uri: lb://msvc-auth
           predicates:
             - Path=/api/v1/auth/**
+          filters:
+            - PrefixPath=/api/v1
