@@ -19,7 +19,7 @@ spring:
           predicates:
             - Path=catalog/**
           filters:
-           - PrefixPath=/api/v1/
+           - PrefixPath=/api/v1
         - id: notifications
           uri: lb://msvc-notifications
           predicates:
