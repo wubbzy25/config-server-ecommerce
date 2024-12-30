@@ -17,30 +17,36 @@ spring:
         - id: catalog
           uri: lb://msvc-catalog
           predicates:
-            - Path=/api/catalog/**
+            - Path=catalog/**
+          filters:
+           - PrefixPath=/api/v1/
         - id: notifications
           uri: lb://msvc-notifications
           predicates:
-            - Path=/api/notifications/**
+            - Path=notifications/**
+          filters:
+           - PrefixPath=/api/v1/
         - id: orders
           uri: lb://msvc-orders
           predicates:
-            - Path=/api/orders/**
+            - Path=orders/**
+          filters:
+           - PrefixPath=/api/v1/
         - id: payments
           uri: lb://msvc-payments
           predicates:
-            - Path=/api/payments/**
+            - Path=payments/**
+          filters:
+           - PrefixPath=/api/v1/
         - id: shopping-cart
           uri: lb://msvc-shopping-cart
           predicates:
-            - Path=/api/shopping-cart/**
+            - Path=shopping-cart/**
+          filters:
+           - PrefixPath=/api/v1/
         - id: auth
           uri: lb://msvc-auth
           predicates:
-            - Path=/api/auth/**
-
-  management:
-    endpoints:
-      web:
-        exposure:
-          include: 'gateway'
+            - Path=auth/**
+          filters:
+           - PrefixPath=/api/v1/
