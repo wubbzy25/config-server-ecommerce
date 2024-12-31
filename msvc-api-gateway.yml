@@ -1,39 +1,11 @@
 server:
   port: 8000
 spring:
-  main:
-    web-application-type: REACTIVE
   application:
     name: msvc-api-gateway
-  kafka:
-    bootstrapServers: localhost:9092
-  logging:
-    level:
-      org.springframework.cloud.gateway: TRACE
-      reactor.netty.http.client: TRACE
   cloud:
     gateway:
       routes:
-        - id: catalog
-          uri: lb://msvc-catalog
-          predicates:
-            - Path=/api/v1/catalog/**
-        - id: notifications
-          uri: lb://msvc-notifications
-          predicates:
-            - Path=/api/v1/notifications/**
-        - id: orders
-          uri: lb://msvc-orders
-          predicates:
-            - Path=/api/v1/orders/**
-        - id: payments
-          uri: lb://msvc-payments
-          predicates:
-            - Path=/api/v1/payments/**
-        - id: shopping-cart
-          uri: lb://msvc-shopping-cart
-          predicates:
-            - Path=/api/v1/shopping-cart/**
         - id: auth
           uri: lb://msvc-auth
           predicates:
