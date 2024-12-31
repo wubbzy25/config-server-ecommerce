@@ -17,7 +17,7 @@ spring:
         - id: catalog
           uri: lb://msvc-catalog
           predicates:
-            - Path=/api/v1/catalog/**
+            - Path=api/v1/catalog/**
         - id: notifications
           uri: lb://msvc-notifications
           predicates:
