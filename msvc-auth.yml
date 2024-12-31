@@ -5,6 +5,8 @@ spring:
     name: msvc-auth
   kafka:
     bootstrapServers: localhost:9092
+  jwt:
+    expiration: 604800
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/ecommerce
