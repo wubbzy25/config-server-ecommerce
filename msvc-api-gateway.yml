@@ -28,6 +28,10 @@ spring:
           uri: lb://msvc-catalog
           predicates:
           - Path=/api/v1/catalog/**
+        - id: reviews
+          uri: lb://msvc-reviews
+          predicates:
+          - Path=/api/v1/reviews/**
 eureka:
   instance:
     hostname: localhost
