@@ -5,7 +5,7 @@ spring:
     name: msvc-catalog
   datasource:
     driver-class-name: org.postgresql.Driver
-     url: jdbc:postgresql://localhost:5432/ecommerce
+    url: jdbc:postgresql://localhost:5432/ecommerce
     username: postgres
     password: postgres
   jpa:
