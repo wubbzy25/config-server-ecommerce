@@ -38,6 +38,7 @@ spring:
           - Path=/api/v1/shopping-cart/**
         - id: payments
           uri: lb://msvc-payments
+          predicates:
           - Path:/api/v1/payments/**
 eureka:
   instance:
