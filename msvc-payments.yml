@@ -10,3 +10,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+stripe:
+ key:
+  secret: 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
