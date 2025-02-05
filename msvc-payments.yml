@@ -12,4 +12,4 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 stripe:
  key:
-  secret: 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
+  secret: sk_test_51Nv41pHdRJMRyS5QZ8X4RijGsHGAzBGNjuXhF381a0HXhPWdPkeNjm3ph46yBZtajsCd20Ki5WKAKoGUWjtjSTv200JPunuGbY
