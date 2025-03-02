@@ -10,7 +10,7 @@ spring:
     password: npg_qmyP7jREw4kZ
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
 
