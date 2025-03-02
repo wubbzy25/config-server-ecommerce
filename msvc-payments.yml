@@ -5,9 +5,9 @@ spring:
     name: msvc-payments
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/ecommerce
-    username: postgres
-    password: postgres
+    url: jdbc:postgresql://ep-dawn-tree-a4nn2ysx.us-east-1.aws.neon.tech/neondb
+    username: neondb_owne
+    password: npg_qmyP7jREw4kZ
   jpa:
     hibernate:
       ddl-auto: update
