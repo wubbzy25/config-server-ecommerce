@@ -9,7 +9,7 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://ep-dawn-tree-a4nn2ysx.us-east-1.aws.neon.tech/neondb
-    username: neondb_owne
+    username: neondb_owner
     password: npg_qmyP7jREw4kZ
   jpa:
     hibernate:
