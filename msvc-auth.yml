@@ -23,4 +23,4 @@ eureka:
     hostname: e-commerce-backend-eureka.onrender.com
   client:
     service-url:
-      defaultZone: https://e-commerce-backend-eureka.onrender.com
+      defaultZone: https://e-commerce-backend-config.onrender.com/msvc-auth/default
