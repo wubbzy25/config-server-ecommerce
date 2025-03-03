@@ -42,7 +42,7 @@ spring:
           - Path=/api/v1/payments/**
 eureka:
   instance:
-    hostname: localhost
+    hostname: e-commerce-backend-eureka.onrender.com
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: https://e-commerce-backend-eureka.onrender.com/eureka
