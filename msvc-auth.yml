@@ -19,8 +19,6 @@ spring:
   
 
 eureka:
-  instance:
-    hostname: e-commerce-backend-eureka.onrender.com
   client:
     service-url:
-      defaultZone: https://e-commerce-backend-config.onrender.com/eureka/
+      defaultZone: https://e-commerce-backend-config.onrender.com
