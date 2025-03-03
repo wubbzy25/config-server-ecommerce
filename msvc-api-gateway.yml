@@ -40,9 +40,8 @@ spring:
           uri: lb://msvc-payments
           predicates:
           - Path=/api/v1/payments/**
+          
 eureka:
-  instance:
-    hostname: e-commerce-backend-eureka.onrender.com
   client:
     service-url:
-      defaultZone: https://e-commerce-backend-eureka.onrender.com/eureka
+      defaultZone: https://e-commerce-backend-eureka.onrender.com/eureka/
