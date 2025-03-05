@@ -15,9 +15,11 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
 
 eureka:
+  instance:
+    hostname: localhost
   client:
     service-url:
-      defaultZone: https://e-commerce-backend-eureka.onrender.com/eureka/
+      defaultZone: http://localhost:8761/eureka/
 stripe:
  key:
   secret: sk_test_51Nv41pHdRJMRyS5QZ8X4RijGsHGAzBGNjuXhF381a0HXhPWdPkeNjm3ph46yBZtajsCd20Ki5WKAKoGUWjtjSTv200JPunuGbY
