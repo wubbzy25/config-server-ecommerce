@@ -8,7 +8,7 @@ spring:
       globalcors:
         corsConfigurations:
           '[/**]':
-            allowedOrigins: 'https://e-commerce-frontend-two-bice.vercel.app/login'
+            allowedOrigins: 'http://localhost:4200'
             allowedMethods:
               - GET
               - POST
