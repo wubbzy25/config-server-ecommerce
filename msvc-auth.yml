@@ -23,15 +23,4 @@ eureka:
     registry-fetch:
       enabled: true
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-    initial-instance-info-replication-interval-seconds: 10
-    instance-info-replication-interval-seconds: 10
-    initial-registration-delay-initial-ms: 10000
-  instance:
-    lease-renewal-interval-in-seconds: 10
-
-spring:
-  cloud:
-    loadbalancer:
-      ribbon:
-        enabled: false
+      defaultZone: http://eureka-microservice:8761/eureka/
