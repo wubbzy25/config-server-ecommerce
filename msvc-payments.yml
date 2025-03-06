@@ -16,10 +16,10 @@ spring:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: eureka-microservice
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://eureka-microservice:8761/eureka/
 stripe:
  key:
   secret: sk_test_51Nv41pHdRJMRyS5QZ8X4RijGsHGAzBGNjuXhF381a0HXhPWdPkeNjm3ph46yBZtajsCd20Ki5WKAKoGUWjtjSTv200JPunuGbY
