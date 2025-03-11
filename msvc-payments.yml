@@ -15,11 +15,12 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
 
 eureka:
-  instance:
-    hostname: eureka-microservice
   client:
+    fetch-registry: true
     service-url:
       defaultZone: http://eureka-microservice:8761/eureka/
+  instance:
+    prefer-ip-address: true
 stripe:
  key:
   secret: sk_test_51Nv41pHdRJMRyS5QZ8X4RijGsHGAzBGNjuXhF381a0HXhPWdPkeNjm3ph46yBZtajsCd20Ki5WKAKoGUWjtjSTv200JPunuGbY
