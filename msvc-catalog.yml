@@ -5,9 +5,9 @@ spring:
     name: msvc-catalog
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://ep-dawn-tree-a4nn2ysx.us-east-1.aws.neon.tech/neondb
-    username: neondb_owner
-    password: npg_qmyP7jREw4kZ
+    url: jdbc:postgresql://localhost:5432/ecommerce
+    username: postgres
+    password: postgres
   jpa:
     hibernate:
       ddl-auto: none
