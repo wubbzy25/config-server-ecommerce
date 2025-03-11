@@ -1,5 +1,6 @@
 server:
   port: 8060
+
 spring:
   application:
     name: msvc-auth
@@ -16,11 +17,13 @@ spring:
       ddl-auto: none
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
-  
 
 eureka:
   client:
-    registry-fetch:
-      enabled: true
-    serviceUrl:
+    fetch-registry: true
+    service-url:
       defaultZone: http://eureka-microservice:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 5  # Cada 5 segundos envía un heartbeat a Eureka
+    lease-expiration-duration-in-seconds: 10  # Si en 10 segundos no hay heartbeat, Eureka lo elimina
