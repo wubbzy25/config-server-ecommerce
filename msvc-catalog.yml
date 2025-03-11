@@ -16,8 +16,9 @@ spring:
 
 
 eureka:
-  instance:
-    hostname: eureka-microservice
   client:
+    fetch-registry: true
     service-url:
       defaultZone: http://eureka-microservice:8761/eureka/
+  instance:
+    prefer-ip-address: true
